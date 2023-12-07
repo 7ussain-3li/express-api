@@ -29,7 +29,7 @@ app.get('/users', (req, res) => {
     }
     else if (CompanyName) {
         const user = users.filter((user) => user.company.name == (CompanyName))
-        res.send([user])
+        res.send(user)
     }
     else if (City) {
         const user = users.filter((user) => user.address.city == (City))
